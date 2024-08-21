@@ -43,7 +43,7 @@ export default function ContactForm({ onAdd }) {
           <label htmlFor={numberId}>Number</label>
           <Field
             className={`${css.field} ${css.number}`}
-            type="number"
+            type="text"
             name="number"
             id={numberId}
           />
