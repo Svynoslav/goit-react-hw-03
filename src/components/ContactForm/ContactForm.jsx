@@ -14,6 +14,7 @@ export default function ContactForm({ onAdd }) {
       .max(50, "Too long")
       .required("This field is required"),
     number: Yup.string()
+      .matches(/^[0-9-]+$/, "Invalid number format")
       .min(3, "Too short")
       .max(50, "Too long")
       .required("This field is required"),
